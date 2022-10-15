@@ -170,7 +170,6 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
     Campsite.findById(req.params.campsiteId)
       .then((campsite) => {
         if (campsite && campsite.comments.id(req.params.commentId)) {
-          // Check if comment's author is the same as the user or is an admin
           if (
             campsite.comments
               .id(req.params.commentId)
@@ -212,7 +211,6 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
     Campsite.findById(req.params.campsiteId)
       .then((campsite) => {
         if (campsite && campsite.comments.id(req.params.commentId)) {
-          // Check if comment's author is the same as the user or is an admin
           if (
             campsite.comments
               .id(req.params.commentId)
