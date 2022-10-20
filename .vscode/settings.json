@@ -3,9 +3,12 @@
         "filefilter",
         "firstname",
         "imagefile",
+        "jssdk",
         "lastname",
         "nucampsite",
         "nucampsiteserver",
-        "resave"
+        "onlogin",
+        "resave",
+        "xfbml"
     ]
 }
